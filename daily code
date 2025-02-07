@@ -1,0 +1,52 @@
+#kenny
+#1/15/25
+#1) Write function Max_Of_Three. This function takes three integer parameters and returns which one is largest. Call it in a print statement
+#solo
+#2 minutes
+
+def Max_Of_Three(a, b, c):
+    return max(a, b, c)
+
+print(Max_Of_Three(8, 7, 5))#Output will be 7
+
+#---------------------------------------------------------
+#kenny
+#1/15/25
+#2) Write function RectPerimeter. This function takes two integer parameters, "length" and "width", which represent the sides of a rectangle. It then returns the perimeter of that rectangle.
+#solo
+#2 minutes
+
+def RectPerimeter(length, width):
+    return 2 * (length + width)
+
+print(RectPerimeter(6, 2))#Output will be 16
+
+#-----------------------------------------------------------
+#kenny
+#1/15/25
+#3) Write function SumUpNums. This function takes one integer parameter and returns the sum of all the numbers leading up to that number. For example, SumUpNums(5) would return 15, since 1+2+3+4+5=15. Hint for this one: you'll need an extra variable declared inside this function and I also recommend using a for loop!
+#5 minutes
+#solo
+
+def SumUpNums(n):
+    total = 0
+    for i in range(1, n + 1):
+        total += i
+    return total
+
+print(SumUpNums(5))#Output will be 15
+
+#----------------------------------------------------------
+#kenny
+#1/15/25
+#4) Write function DogWoof. DogWoof takes two parameters: a number "num" and a string "name". When called, it prints out "___ says woof!" , where the blank spot is the name passed in and x is the number passed in. For example if we call "DogWoof(3, "pibble"), it will print out "pibble says woof! pibble says woof! pibble says woof!". This function doesn't need to return anything. 
+#10 minutes
+#solo
+
+def DogWoof(num, name):
+    for _ in range(num):
+        print("Pibble says woof!")
+        
+DogWoof(6, "pibble")
+
+#-------------------------------------------------------------
